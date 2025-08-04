@@ -5,226 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Starbucks Menu Clone</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <style>
-    body {
-      height: 100vh;
-      width: 100vw;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fff;
-      overflow-x: hidden;
-    }
-
-    header {
-      padding-right: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header nav {
-      display: flex;
-      gap: 24px;
-    }
-    .nav-bar{
-      display: flex;
-    }
-    .left{
-      display: flex;
-      align-items: center;
-      padding-right: 570px;
-    }
-    .texth{
-      cursor: pointer;
-    }
-    .texth:hover{
-      color: #01754a;
-    }
-
-    header .right {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .login{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid #000;
-      height: 30px;
-      width: 80px;
-      border-radius: 15px;
-    }
-    .tab-bar {
-      background-color: #f9f9f9;
-      padding-left: 8%;
-      height: auto;
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(45px);
-      display: flex;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .tab-bar div {
-      padding: 12px 16px;
-      cursor: pointer;
-    }
-
-    .tab-bar .active {
-      border-bottom: 3px solid #006241;
-    }
-
-    .content {
-      margin-left: 100px;
-      display: flex;
-      padding: 32px;
-      padding-bottom: 120px; /* ✅ Thêm khoảng tránh cho bottom bar */
-    }
-
-    .textsb{
-      cursor: pointer;
-    }
-
-    aside {
-      width: 200px;
-      padding-right: 32px;
-    }
-
-    main {
-      padding-right: 300px;
-      flex: 1;
-    }
-
-    h2 {
-      margin-bottom: 16px;
-    }
-
-    .category-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      margin-bottom: 48px;
-    }
-
-    .category {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      width: calc(50% - 12px);
-    }
-
-    .category img {
-      cursor: pointer;
-      width: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      background: #1e3932;
-    }
-
-    .category span {
-      font-size: 16px;
-    }
-
-    footer {
-      background: #f9f9f9;
-      padding: 32px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      border-top: 1px solid #ccc;
-    }
-
-    .footer-column {
-      cursor: pointer;
-      padding-left: 90px;
-      margin-bottom: 16px;
-    }
-
-    .footer-column h4 {
-      margin-bottom: 8px;
-    }
-
-    .footer-column ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .footer-column ul li {
-      margin-bottom: 4px;
-    }
-
-    .bottom{
-      padding-left: 90px;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      align-content: space-around;
-    }
-    .bottom a{
-      text-decoration: none;
-      color: black;
-    }
-    .bottom a:hover{
-      text-decoration: underline;
-    }
-    .bottom-bar {
-      height: 10%;
-      width: 100%;
-      position: fixed;
-      bottom: 0;
-      z-index: 999;
-      background: #1e3932;
-      color: white;
-      padding: 16px 32px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-    }
-
-    .availability {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .note {
-      color: #ccc;
-      font-size: 14px;
-      margin: 0;
-    }
-
-    .store-select {
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: bold;
-    }
-
-    .store-select .arrow {
-      font-size: 10px;
-      color: #ccc;
-    }
-
-    .store-select .underline {
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #ccc;
-    }
-
-    .cart-icon svg {
-      width: 24px;
-      height: 24px;
-    }
-
-  </style>
 </head>
 <body>
   <header>
@@ -365,16 +145,13 @@
     </ul>
   </div>
 
-  <!-- Phần bổ sung thêm -->
   <div class="bottom" style="flex-basis: 100%; border-top: 1px solid #ccc; margin-top: 24px; padding-top: 24px; text-align: center;">
-    <!-- Icon mạng xã hội -->
     <div style="margin-bottom: 16px;">
       <a href="#" style="margin: 0 8px;"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" /></a>
       <a href="#" style="margin: 0 8px;"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" /></a>
       <a href="#" style="margin: 0 8px;"><img src="https://cdn-icons-png.flaticon.com/24/3670/3670151.png" alt="X" /></a>
     </div>
 
-    <!-- Các liên kết -->
     <div style="font-size: 16px; margin-bottom: 16px; ">
       <a href="#" style="margin: 0 8px; padding-right: 20px;">Privacy Notice</a> |
       <a href="#" style="margin: 0 8px; padding-left: 20px; padding-right: 20px;">Terms of Use</a> |
@@ -384,7 +161,7 @@
       <a href="#" style="margin: 0 8px; padding-left: 20px; padding-right: 20px;">Cookie Preferences</a>
     </div>
 
-    <!-- Bản quyền -->
+
     <div style="font-size: 13px; color: #555; margin-bottom: 166px;">
       &copy; Starbucks Corporation, 2025. All rights reserved.
     </div>
@@ -397,7 +174,7 @@
     <p class="note">To know the availability of the article</p>
     <div class="store-select">
       <span class="store">Choose a store</span>
-      <span class="arrow">&#9662;</span> <!-- mũi tên xuống -->
+      <span class="arrow">&#9662;</span>
       <div class="underline"></div>
     </div>
   </div>
