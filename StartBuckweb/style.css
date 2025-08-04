@@ -116,6 +116,7 @@ body {
 }
 
 .content {
+  width: 10%;
   flex: 1;
   padding-left: 40px;
 }
@@ -133,6 +134,7 @@ body {
 .product-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -152,6 +154,7 @@ body {
   margin-top: 8px;
   font-size: 14px;
 }
+
 .footer{
   height: 100%;
   width: 100%;
